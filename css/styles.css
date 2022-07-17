@@ -1,0 +1,390 @@
+:root {
+    --h-text-color: rgba(33, 33, 33, 1);
+    --p-text-color: rgba(117, 117, 117, 1);
+    --accent-color: rgba(33, 150, 243, 1);
+    --background-color: rgba(255, 255, 255, 1);
+    --wight-text: rgba(255, 255, 255, 1);
+    --background-dark-gray: rgba(47, 48, 58, 1);
+    --background-light-gray: rgba(245, 244, 250, 1);
+    --background-button-filter: rgba(245, 244, 250, 1);
+}
+
+body {
+    color: var(--h-text-color);
+    background-color: var(--background-color);
+
+    font-family: Roboto, sans-serif;
+}
+
+body p {
+    color: var(--p-text-color);
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+.conteiner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* --------------------header----------------------- */
+header {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
+
+.header-conteiner {
+    display: flex;
+}
+
+.logo {
+    color: rgba(0, 0, 0, 1);
+
+    font-family: Raleway;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    text-decoration: none;
+}
+.logo-web {
+    color: var(--accent-color);
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+}
+
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.site-nav a {
+    display: block;
+
+    color: var(--h-text-color);
+    text-decoration: none;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.site-nav a:hover,
+.site-nav a:focus {
+    color: var(--accent-color);
+}
+.site-nav .current {
+    color: var(--accent-color);
+}
+
+.cont-link {
+    display: flex;
+    margin-left: auto;
+}
+
+.cont-link .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.cont-link a {
+    display: block;
+
+    color: var(--p-text-color);
+    text-decoration: none;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.cont-link a:hover,
+.cont-link a:focus {
+    color: var(--accent-color);
+}
+
+/* --------------------hero----------------------- */
+
+.hero {
+    text-align: center;
+    color: var(--wight-text);
+    background-color: var(--background-dark-gray);
+
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+h1 {
+    width: 696px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+/* --------------------button----------------------- */
+.button {
+    border: 0;
+    padding: 10px 32px;
+    border-radius: 4px;
+
+    color: var(--wight-text);
+    background-color: var(--accent-color);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    cursor: pointer;
+}
+
+/* -------------------advantage----------------------- */
+
+.advantage h3 {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.advantage p {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    margin: 0;
+}
+
+.advantage-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantage-list li {
+    width: 270px;
+}
+
+/* -----------------activities-------------------- */
+
+.activities {
+padding-top: 0;}
+
+.activities-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* --------------------teem----------------------- */
+
+.teem {
+    background-color: var(--background-light-gray);
+}
+
+.teem-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.teem-list li {
+    padding-bottom: 30px;
+    background-color: var(--background-color);
+}
+
+.teem h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.teem p {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin: 0;
+}
+
+/* --------------------footer----------------------- */
+
+footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--background-dark-gray);
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+footer .logo {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--wight-text);
+}
+footer address {
+    margin-bottom: 9px;
+    color: var(--wight-text);
+    font-style: normal;
+}
+
+footer li:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer-cont {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-cont:hover,
+.footer-cont:focus {
+    color: var(--accent-color);
+}
+
+
+/*-----!!!-------- PORTFOLIO------!!!------- */
+
+
+/*---------------- button portfolio---------------- */
+
+.button-filter {
+    border-radius: 4px;
+    border: 0;
+    padding: 6px 22px;
+
+    color: var(--h-text-color);
+    background-color: var(--background-button-filter);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    cursor: pointer;
+}
+
+.button-filter:hover,
+.button-filter:focus {
+    color: var(--wight-text);
+    background-color: var(--accent-color);
+}
+
+/*----------------examples---------------- */
+
+.examples ul {
+    display: flex;
+}
+
+.examples-list-btn {
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.examples-list-btn li:not(:last-child) {
+    margin-right: 8px;
+}
+
+.examples-list-card {
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.examples-list-card li {
+    width: 370px;
+}
+
+.examples a {
+    text-decoration: none;
+}
+
+.card-title {
+    padding: 20px 24px;
+    border: 1px solid rgba(238, 238, 238, 1);
+    border-top: none;
+}
+
+.examples h2 {
+    color: var(--h-text-color);
+
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.examples p {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+
+    margin: 0;
+}
